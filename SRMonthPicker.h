@@ -102,6 +102,9 @@
 /// en-US alias for `fontColour`.
 @property (nonatomic, strong, getter = fontColour, setter = setFontColour:) UIColor *fontColor;
 
+/// The calendar that was used
+@property (nonatomic, strong, readonly)NSCalendar *calendar;
+
 /**
   Designated initialiser.
 
@@ -117,5 +120,13 @@
   component will be ignored.
 */
 -(id)initWithDate:(NSDate *)date;
+
+/**
+ Initializes and returns a newly allocated month picker with a specified date and calendar
+ @param date The date to be represented by the month picker -  the day
+ component will be ignored.
+ @param calendar The calendar to used by the date.
+ */
+- (id)initWithDate:(NSDate *)date calendar:(NSCalendar *)calendar;
 
 @end
