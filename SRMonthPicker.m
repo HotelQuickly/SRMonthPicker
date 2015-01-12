@@ -39,7 +39,7 @@
 static const NSInteger SRMonthRowMultiplier = 340;
 static const NSInteger SRDefaultMinimumYear = 1;
 static const NSInteger SRDefaultMaximumYear = 99999;
-static const NSCalendarUnit SRDateComponentFlags = NSMonthCalendarUnit | NSYearCalendarUnit;
+static const NSCalendarUnit SRDateComponentFlags = NSCalendarUnitMonth | NSCalendarUnitYear;
 
 @synthesize calendar = _calendar;
 
